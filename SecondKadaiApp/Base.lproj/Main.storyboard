@@ -18,9 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E9A-jp-vyW">
-                                <rect key="frame" x="321" y="122" width="25" height="30"/>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3qT-zh-96g">
                                 <rect key="frame" x="92" y="67" width="191" height="50"/>
                                 <subviews>
@@ -84,13 +81,11 @@
                             <constraint firstItem="vbR-Vb-81j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7fQ-V4-k1J"/>
                             <constraint firstItem="Obm-5Y-VOl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="122" id="9Cw-r4-3cL"/>
                             <constraint firstItem="CR5-7x-Ggb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FsY-xr-khO"/>
-                            <constraint firstItem="E9A-jp-vyW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TiF-1D-WzX"/>
                             <constraint firstItem="Obm-5Y-VOl" firstAttribute="top" secondItem="3qT-zh-96g" secondAttribute="bottom" constant="50" id="Y6c-OH-7M1"/>
                             <constraint firstItem="CR5-7x-Ggb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="YXZ-dw-Klh"/>
                             <constraint firstItem="vbR-Vb-81j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZOg-eQ-2Yt"/>
                             <constraint firstItem="vbR-Vb-81j" firstAttribute="top" secondItem="Obm-5Y-VOl" secondAttribute="bottom" constant="80" id="qKi-XC-ta4"/>
                             <constraint firstItem="Obm-5Y-VOl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v9d-FC-Jvu"/>
-                            <constraint firstItem="vbR-Vb-81j" firstAttribute="top" secondItem="E9A-jp-vyW" secondAttribute="bottom" constant="100" id="x15-76-bFo"/>
                             <constraint firstItem="Obm-5Y-VOl" firstAttribute="top" secondItem="3qT-zh-96g" secondAttribute="bottom" constant="50" id="yRD-kr-gQt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
