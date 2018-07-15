@@ -18,30 +18,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbR-Vb-81j">
-                                <rect key="frame" x="164" y="178" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E9A-jp-vyW">
+                                <rect key="frame" x="321" y="122" width="25" height="30"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3qT-zh-96g">
+                                <rect key="frame" x="92" y="67" width="191" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Bk-Ej-7zP">
+                                        <rect key="frame" x="0.0" y="0.0" width="191" height="50"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FQm-KS-9xu">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="50"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jIp-Ib-wEU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="191" height="50"/>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="FQm-KS-9xu" firstAttribute="centerX" secondItem="7Bk-Ej-7zP" secondAttribute="centerX" constant="50" id="k3h-sU-lae"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CR5-7x-Ggb">
+                                <rect key="frame" x="92" y="70" width="191" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wlp-tj-GQx">
+                                <rect key="frame" x="310.5" y="191" width="50" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oQE-TS-5Oj">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fur-M6-QLo">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oQE-TS-5Oj" firstAttribute="centerX" secondItem="wlp-tj-GQx" secondAttribute="centerX" id="23i-lA-Zb6"/>
+                                    <constraint firstItem="oQE-TS-5Oj" firstAttribute="centerY" secondItem="wlp-tj-GQx" secondAttribute="centerY" id="qSc-N6-YQW"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbR-Vb-81j">
+                                <rect key="frame" x="164.5" y="232" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="R9n-EA-kLv" kind="show" id="1Je-aR-ipj"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Obm-5Y-VOl">
-                                <rect key="frame" x="139" y="122" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Obm-5Y-VOl">
+                                <rect key="frame" x="92" y="122" width="191" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CR5-7x-Ggb">
-                                <rect key="frame" x="92" y="67" width="191" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vbR-Vb-81j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7fQ-V4-k1J"/>
+                            <constraint firstItem="Obm-5Y-VOl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="122" id="9Cw-r4-3cL"/>
+                            <constraint firstItem="CR5-7x-Ggb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FsY-xr-khO"/>
+                            <constraint firstItem="E9A-jp-vyW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TiF-1D-WzX"/>
+                            <constraint firstItem="Obm-5Y-VOl" firstAttribute="top" secondItem="3qT-zh-96g" secondAttribute="bottom" constant="50" id="Y6c-OH-7M1"/>
+                            <constraint firstItem="CR5-7x-Ggb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="YXZ-dw-Klh"/>
+                            <constraint firstItem="vbR-Vb-81j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZOg-eQ-2Yt"/>
+                            <constraint firstItem="vbR-Vb-81j" firstAttribute="top" secondItem="Obm-5Y-VOl" secondAttribute="bottom" constant="80" id="qKi-XC-ta4"/>
+                            <constraint firstItem="Obm-5Y-VOl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v9d-FC-Jvu"/>
+                            <constraint firstItem="vbR-Vb-81j" firstAttribute="top" secondItem="E9A-jp-vyW" secondAttribute="bottom" constant="100" id="x15-76-bFo"/>
+                            <constraint firstItem="Obm-5Y-VOl" firstAttribute="top" secondItem="3qT-zh-96g" secondAttribute="bottom" constant="50" id="yRD-kr-gQt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -50,6 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="475.41229385307349" y="29.600000000000001"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="TTI-Vx-qd3">
@@ -59,23 +111,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjb-HS-DIS">
-                                <rect key="frame" x="172" y="143" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjb-HS-DIS">
+                                <rect key="frame" x="172" y="191" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="cZP-NT-1ku" kind="unwind" unwindAction="unwind:" id="KRq-2h-Vjh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="こんにちわ、名前さん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbo-Un-SD4">
-                                <rect key="frame" x="100" y="76" width="174" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こんにちわ、名前さん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbo-Un-SD4">
+                                <rect key="frame" x="100.5" y="70" width="174" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xjb-HS-DIS" firstAttribute="top" secondItem="Qbo-Un-SD4" secondAttribute="bottom" constant="100" id="7OG-6Y-FbB"/>
+                            <constraint firstItem="Qbo-Un-SD4" firstAttribute="centerX" secondItem="BqK-h9-EzJ" secondAttribute="centerX" id="Oxy-i2-SLX"/>
+                            <constraint firstItem="Qbo-Un-SD4" firstAttribute="top" secondItem="xnK-UW-U2Y" secondAttribute="top" constant="50" id="kn7-l6-TIl"/>
+                            <constraint firstItem="Xjb-HS-DIS" firstAttribute="centerX" secondItem="BqK-h9-EzJ" secondAttribute="centerX" id="xs7-wk-tBl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xnK-UW-U2Y"/>
                     </view>
                     <connections>
@@ -85,7 +141,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXr-d8-Y9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="cZP-NT-1ku" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1324" y="32"/>
+            <point key="canvasLocation" x="1324" y="31.934032983508249"/>
         </scene>
     </scenes>
 </document>

@@ -27,7 +27,7 @@ class ResultViewController: UIViewController {
         // 1画面目のViewControllerから遷移するときにprepareForSegueで
         // x, yの値を新たに代入されたので両方共 1 が入っている
 
-        label.text = "名前は \(names) です"
+        label.text = "こんにちわ \(names) さん"
     }
     
     override func didReceiveMemoryWarning() {
