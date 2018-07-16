@@ -14,7 +14,8 @@ class ResultViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
     
-    // 受け取るためのプロパティ（変数）を宣言しておく
+    // 受け取るためのプロパティ（変数）を宣言しておく names にXを代入するという意味
+    
     var names = "x"
     
 
@@ -27,7 +28,7 @@ class ResultViewController: UIViewController {
         // 1画面目のViewControllerから遷移するときにprepareForSegueで
         // x, yの値を新たに代入されたので両方共 1 が入っている
 
-        label.text = "こんにちわ \(names) さん"
+        label.text = "こんにちは、\(names) さん"
     }
     
     override func didReceiveMemoryWarning() {

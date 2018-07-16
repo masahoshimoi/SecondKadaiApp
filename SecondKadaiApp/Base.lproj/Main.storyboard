@@ -18,40 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3qT-zh-96g">
-                                <rect key="frame" x="92" y="67" width="191" height="50"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Bk-Ej-7zP">
-                                        <rect key="frame" x="0.0" y="0.0" width="191" height="50"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FQm-KS-9xu">
-                                                <rect key="frame" x="0.0" y="0.0" width="191" height="50"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jIp-Ib-wEU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="191" height="50"/>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="FQm-KS-9xu" firstAttribute="centerX" secondItem="7Bk-Ej-7zP" secondAttribute="centerX" constant="50" id="k3h-sU-lae"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CR5-7x-Ggb">
                                 <rect key="frame" x="92" y="70" width="191" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wlp-tj-GQx">
-                                <rect key="frame" x="310.5" y="191" width="50" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wlp-tj-GQx">
+                                <rect key="frame" x="311" y="191" width="50" height="50"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oQE-TS-5Oj">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oQE-TS-5Oj">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fur-M6-QLo">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fur-M6-QLo">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             </stackView>
                                         </subviews>
@@ -63,14 +42,14 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbR-Vb-81j">
-                                <rect key="frame" x="164.5" y="232" width="46" height="30"/>
+                                <rect key="frame" x="165" y="232" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="R9n-EA-kLv" kind="show" id="1Je-aR-ipj"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Obm-5Y-VOl">
-                                <rect key="frame" x="92" y="122" width="191" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Obm-5Y-VOl">
+                                <rect key="frame" x="175" y="122" width="25" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -81,12 +60,15 @@
                             <constraint firstItem="vbR-Vb-81j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7fQ-V4-k1J"/>
                             <constraint firstItem="Obm-5Y-VOl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="122" id="9Cw-r4-3cL"/>
                             <constraint firstItem="CR5-7x-Ggb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FsY-xr-khO"/>
-                            <constraint firstItem="Obm-5Y-VOl" firstAttribute="top" secondItem="3qT-zh-96g" secondAttribute="bottom" constant="50" id="Y6c-OH-7M1"/>
+                            <constraint firstItem="wlp-tj-GQx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="171" id="I6C-zQ-BiC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wlp-tj-GQx" secondAttribute="bottom" constant="426" id="V4R-Co-bWE"/>
+                            <constraint firstItem="CR5-7x-Ggb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V9f-SL-ZM2"/>
                             <constraint firstItem="CR5-7x-Ggb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="YXZ-dw-Klh"/>
                             <constraint firstItem="vbR-Vb-81j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZOg-eQ-2Yt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wlp-tj-GQx" secondAttribute="trailing" constant="14" id="i3I-jk-KZb"/>
+                            <constraint firstItem="wlp-tj-GQx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="311" id="p57-FX-ocp"/>
                             <constraint firstItem="vbR-Vb-81j" firstAttribute="top" secondItem="Obm-5Y-VOl" secondAttribute="bottom" constant="80" id="qKi-XC-ta4"/>
                             <constraint firstItem="Obm-5Y-VOl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v9d-FC-Jvu"/>
-                            <constraint firstItem="Obm-5Y-VOl" firstAttribute="top" secondItem="3qT-zh-96g" secondAttribute="bottom" constant="50" id="yRD-kr-gQt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
